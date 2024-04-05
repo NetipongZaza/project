@@ -6,13 +6,15 @@
 }
 
 body {
-    background-color: #f5f5f5; /* Light grayish background */
+    background: linear-gradient(rgb(255, 165, 0), white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Arial', sans-serif; /* Updated font stack */
     line-height: 1.6; /* Improved readability */
 }
 
 header {
-    background-color: #ffa500; /* Orange header */
+    backface-visibility: hidden;/* Orange header */
     padding: 20px; /* Increased padding for better spacing */
     display: flex;
     justify-content: space-between;
@@ -46,11 +48,11 @@ a:hover {
 }
 
 .main-text {
-    background-color: #fff; /* White background for main text */
+    backface-visibility: hidden; /* White background for main text */
     margin: 20px auto; /* Center the main-text horizontally */
     padding: 20px; /* Increased padding for better spacing */
     max-width: 1000px; /* Adjusted max-width for responsiveness */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+    box-shadow: 0 2px 4px rgb(255, 255, 255, 0.1); /* Subtle box shadow for depth */
 }
 
 /* Responsive design */
