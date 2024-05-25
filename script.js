@@ -1,10 +1,13 @@
-window.addEventListener('scroll', function() {
-    var scrollPosition = window.scrollY;
-    var body = document.body;
+// JavaScript from before + the following...
 
-    if (scrollPosition > 50) {
-        body.style.backgroundColor = '#e0e0e0';
-    } else {
-        body.style.backgroundColor = '#f4f4f4';
-    }
+const skillsListItems = document.querySelectorAll('.skills-list li');
+
+skillsListItems.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        item.style.color = '#007bff'; // เปลี่ยนสีเมื่อ hover
+    });
+
+    item.addEventListener('mouseout', () => {
+        item.style.color = '#333'; 
+    });
 });
