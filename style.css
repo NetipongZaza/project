@@ -1,45 +1,32 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
+/* styles from before + the following... */
 
-header {
-    background-color: #333;
-    color: #fff;
+.header-content {
+    background-image: url("header-background.jpg"); /* เพิ่มรูปภาพพื้นหลังให้ header */
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
     text-align: center;
-    padding: 2rem 0;
 }
 
-main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 
-section {
-    margin-bottom: 2rem;
-}
-
-h2 {
-    color: #333;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer {
+.section-content {
     text-align: center;
-    padding: 1rem 0;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.skills-list li {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
 }
