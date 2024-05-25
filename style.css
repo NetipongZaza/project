@@ -1,71 +1,45 @@
-/* Resetting some default styles */
-* {
-    box-sizing: border-box;
+body {
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body {
-    background: linear-gradient(rgb(255, 165, 0), white);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Arial', sans-serif; /* Updated font stack */
-    line-height: 1.6; /* Improved readability */
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    backface-visibility: hidden;/* Orange header */
-    padding: 20px; /* Increased padding for better spacing */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
 }
 
-.logo {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    cursor: pointer; /* Changed cursor to pointer for better UX */
-    font-size: 1.5rem; /* Increased font size for better visibility */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.navbar {
-    display: flex;
+section {
+    margin-bottom: 2rem;
 }
 
-a {
-    text-decoration: none;
-    padding: 10px 15px; /* Adjusted padding for better button size */
-    background-color: #fff; /* White background for links */
-    border-radius: 20px; /* Rounded corners */
-    color: #333; /* Darkened text color */
-    margin-right: 10px;
-    transition: background-color 0.3s ease; /* Smooth transition effect */
+h2 {
+    color: #333;
 }
 
-a:hover {
-    background-color: #ddd; /* Light gray background on hover */
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-.main-text {
-    backface-visibility: hidden; /* White background for main text */
-    margin: 20px auto; /* Center the main-text horizontally */
-    padding: 20px; /* Increased padding for better spacing */
-    max-width: 1000px; /* Adjusted max-width for responsiveness */
-    box-shadow: 0 2px 4px rgb(255, 255, 255, 0.1); /* Subtle box shadow for depth */
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: flex-start; /* Align items to the start */
-    }
-    .navbar {
-        margin-top: 10px; /* Add some space between logo and navbar on smaller screens */
-    }
-    .main-text {
-        margin: 20px 10px; /* Adjusted margin for smaller screens */
-        padding: 15px; /* Reduced padding for smaller screens */
-    }
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
